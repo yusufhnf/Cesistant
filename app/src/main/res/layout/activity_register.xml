@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerr"
+    android:background="@drawable/animation_list"
+    tools:context=".Register">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:hint="@string/nrp"
+        android:id="@+id/reg_nrp"
+        android:paddingTop="10pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:inputType="number"
+        android:textColorHint="#FFFF" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_nrp"
+        android:hint="@string/nama_lengkap"
+        android:id="@+id/reg_nama"
+        android:paddingTop="5pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:inputType="number"
+        android:textColorHint="#FFFF" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_nama"
+        android:id="@+id/reg_pass"
+        android:hint="@string/password"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:paddingTop="5pt"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFF" />
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_pass"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:text="@string/foto_ktm"
+        android:onClick="btn_foto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_image"
+        android:id="@+id/status"
+        android:layout_marginTop="2pt"
+        android:text="@string/gambar_belum_diambil"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:textColor="#ff0000"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:id="@+id/btn_regist"
+        android:onClick="klik_reg"
+        android:hint="@string/daftarr"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
