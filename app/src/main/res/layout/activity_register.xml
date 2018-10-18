@@ -56,22 +56,19 @@
         android:text="@string/foto_ktm"
         android:onClick="btn_foto"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/view_image"
         android:layout_below="@id/btn_image"
-        android:id="@+id/status"
-        android:layout_marginTop="2pt"
-        android:text="@string/gambar_belum_diambil"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5pt"
         android:layout_marginLeft="10pt"
         android:layout_marginRight="10pt"
-        android:textColor="#ff0000"
-        />
+        android:layout_height="400px"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/status"
+        android:layout_below="@id/view_image"
         android:layout_marginTop="5pt"
         android:layout_marginLeft="10pt"
         android:layout_marginRight="10pt"
